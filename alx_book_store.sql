@@ -22,7 +22,7 @@ CREATE Customers(
 );
 CREATE Orders(
     order_id INT PRIMARY KEY AUTO_INCREMENT,
-    FOREIGN KEY (customer_id) REFERENCES Customers(id),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     order_date DATE
 );
 CREATE Order_Details(
