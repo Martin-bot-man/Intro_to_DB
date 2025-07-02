@@ -9,7 +9,7 @@ CREATE TABLE Books(
 );
 
 CREATE TABLE Authors(
-    id INT author_id(PRIMARY KEY),
+    book_id INT PRIMARY KEY AUTO_INCREMENT,,
     author_name VARCHAR(215) NOT NULL,
 );
 CREATE Customers(
