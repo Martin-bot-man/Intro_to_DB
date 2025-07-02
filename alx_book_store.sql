@@ -26,7 +26,7 @@ CREATE Orders(
     order_date DATE
 );
 CREATE Order_Details(
-    id INT order_detail_id(PRIMARY KEY),
+    order_details INT PRIMARY KEY AUTO_INCREMENT,
     FOREIGN KEY (order_id) REFERENCES Order(id),
     quantity DOUBLE NOT NULL
 
