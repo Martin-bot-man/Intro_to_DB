@@ -21,7 +21,7 @@ CREATE Customers(
     address TEXT NOT NULL
 );
 CREATE Orders(
-    id INT order_id(PRIMARY KEY),
+    order_id INT PRIMARY KEY AUTO_INCREMENT,
     FOREIGN KEY (customer_id) REFERENCES Customers(id),
     order_date DATE
 );
