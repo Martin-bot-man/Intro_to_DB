@@ -29,6 +29,8 @@ CREATE Order_Details(
     order_details INT PRIMARY KEY AUTO_INCREMENT,
     FOREIGN KEY (order_id) REFERENCES Orders(order_id), 
     FOREIGN KEY (book_id INT) REFERENCES Books(book_id),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id),
+
     quantity DOUBLE NOT NULL
 
 )
